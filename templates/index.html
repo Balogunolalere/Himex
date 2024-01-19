@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Himex | Home
+{% endblock title %}
+
+{% block styles %}
+
+<style>
+	/* Hero section */
+	.hero {
+		position: relative;
+		background-image: url('https://res.cloudinary.com/noiro/image/upload/v1705495943/Himex/john-simmons-N7_NUUtCkDU-unsplash_v2s8lk.jpg');
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+	}
+
+	.hero::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		/* Adjust the opacity as needed */
+	}
+</style>
+
+{% endblock styles %}
+
+
+{% block content %}
+
+<!-- Start Hero Section -->
+<div class="hero" style="display: flex; align-items: center;">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-5">
+				<div class="intro-excerpt">
+					<h1 style="font-size: 48px; margin-bottom: 10px;">Himex Logistics <span class="d-block"></span></h1>
+					<p class="mb-4" style="font-size: 24px;">Himex Logistics, we specialize in providing efficient
+						shipping and storage solutions. Our dedicated team ensures that your products are handled with
+						utmost care. We strive to make the shipping process seamless and hassle-free for our clients.
+					</p>
+					<p><a href="/contact" class="btn btn-secondary me-2">Request Quote</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+<!-- End Hero Section -->
+
+<!-- Start Farm Tank Storage Section -->
+<div class="why-choose-section">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="img-wrap">
+					<img src="https://res.cloudinary.com/noiro/image/upload/v1705495945/Himex/mykola-muzhytskyi-Xleb9vOD0_E-unsplash_ulhse8.jpg" alt="Farm Tank Storage"
+						class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<h2 class="section-title">Tank Storages</h2>
+				<p>At Himex Logistics, we offer tank storage solutions that are designed to meet the unique needs of our
+					clients. Our tank storages are built with high-quality materials to ensure durability and longevity.
+					They are perfect for storing a variety of products and more.</p>
+				<p>With our tank storages, you can rest assured that your products are stored in a safe and secure
+					environment. Our dedicated team of professionals is always on hand to provide you with the support
+					and assistance you need to manage your storage effectively.</p>
+				<p><a href="/storage" class="btn btn-secondary">Learn More</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Farm Tank Storage Section -->
+
+<!-- Start Rail Transport Section -->
+<div class="why-choose-section">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<h2 class="section-title">Rail Transport</h2>
+				<p>At Himex Logistics, we offer rail transport solutions that are designed to meet the unique needs of our clients. Our rail transport services are reliable, efficient and safe. We understand the importance of timely delivery and the need for a transport solution that can handle large volumes of products. </p>
+				<p>Our rail transport services are not just about moving products from one point to another. We offer a comprehensive solution that includes product tracking, and warehousing. We also have a dedicated customer service team that is always ready to answer your questions and address your concerns. With Himex Logistics, you can be sure that your product is in safe hands.</p>
+				<p><a href="/rail-transport" class="btn btn-secondary">Learn More</a></p>
+			</div>
+			<div class="col-lg-6">
+				<div class="img-wrap">
+					<img src="https://images.unsplash.com/photo-1628748429334-101a87a9357d?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rail Transport"
+						class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Rail Transport Section -->
+
+<!-- Start Pipeline Transport Section -->
+<div class="why-choose-section">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="img-wrap">
+					<img src="https://images.unsplash.com/photo-1539186607619-df476afe6ff1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pipeline Transport"
+						class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<h2 class="section-title">Pipeline Transport</h2>
+				<p>At Himex Logistics, we offer pipeline transport solutions that are designed to meet the unique needs of our clients. Our pipeline transport services are reliable, efficient and safe. We understand that pipeline transport is a critical component of the global supply chain, especially for the oil and gas industry.</p>
+				<p>We have a dedicated customer service team that is always ready to answer your questions and address your concerns. With Himex Logistics, you can be sure that your product is in safe hands.</p>
+				<p><a href="/pipeline-transport" class="btn btn-secondary">Learn More</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Pipeline Transport Section -->
+
+<!-- Start Why Choose Us Section -->
+<div class="why-choose-section">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-6">
+				<h2 class="section-title">Why Choose Our Services</h2>
+				<p>We are committed to providing top-notch shipping services that prioritize your needs and
+					satisfaction.</p>
+
+				<div class="row my-5">
+					<div class="col-6 col-md-6">
+						<div class="feature">
+							<div class="icon">
+								<img src="https://res.cloudinary.com/noiro/image/upload/v1705495944/Himex/truck_icuxaz.svg" alt="Image" class="imf-fluid">
+							</div>
+							<h3>Reliable Delivery</h3>
+							<p>We ensure your shipments are delivered on time, every time. Trust us for all your
+								shipping needs.</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-6">
+						<div class="feature">
+							<div class="icon">
+								<img src="https://res.cloudinary.com/noiro/image/upload/v1705495934/Himex/bag_a8psyx.svg" alt="Image" class="imf-fluid">
+							</div>
+							<h3>Convenient Service</h3>
+							<p>Our user-friendly platform makes it easy for you to schedule and manage your shipments.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-6">
+						<div class="feature">
+							<div class="icon">
+								<img src="https://res.cloudinary.com/noiro/image/upload/v1705495944/Himex/support_j56zoh.svg" alt="Image" class="imf-fluid">
+							</div>
+							<h3>Customer Support</h3>
+							<p>Our dedicated support team is available 24/7 to assist you with any queries or issues.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-6">
+						<div class="feature">
+							<div class="icon">
+								<img src="https://res.cloudinary.com/noiro/image/upload/v1705497270/Himex/return_dz9swg.svg" alt="Image" class="imf-fluid">
+							</div>
+							<h3>Secure Transactions</h3>
+							<p>We prioritize your security. All transactions are documented and stored to ensure your
+								information is kept confidential.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-lg-5">
+				<div class="img-wrap">
+					<img src="https://res.cloudinary.com/noiro/image/upload/v1705495937/Himex/aron-yigin-sNY6B9NsPP8-unsplash_acsjre.jpg" alt="Image" class="img-fluid">
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- End Why Choose Us Section -->
+
+<!-- Start We Help Section -->
+<div class="we-help-section">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-7 mb-5 mb-lg-0">
+				<div class="imgs-grid">
+					<div class="grid grid-1"><img src="https://res.cloudinary.com/noiro/image/upload/v1705495937/Himex/aron-yigin-yWOmPT21fg8-unsplash_bamdkt.jpg"
+							alt="Untree.co">
+					</div>
+					<div class="grid grid-2"><img src="https://res.cloudinary.com/noiro/image/upload/v1705495943/Himex/krzysztof-hepner-q_19EsgZ1rQ-unsplash_yuperp.jpg"
+							alt="Untree.co"></div>
+					<div class="grid grid-3"><img src="https://res.cloudinary.com/noiro/image/upload/v1705495943/Himex/gabriel-lucindo-SHFYE0QPwc8-unsplash_lbvemb.jpg"
+							alt="Untree.co">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 ps-lg-5">
+				<h2 class="section-title mb-4">Your Trusted Shipping Partner</h2>
+				<p>We are dedicated to providing reliable and efficient shipping services. Our team ensures that your
+					products are handled with utmost care and delivered on time.</p>
+
+				<ul class="list-unstyled custom-list my-4">
+					<li>Customized shipping solutions to meet your specific needs</li>
+					<li>Secure handling and delivery of your shipments</li>
+					<li>Exceptional customer service ready to assist you</li>
+				</ul>
+				<!-- <p><a href="#" class="btn">Learn More</a></p> -->
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- End We Help Section -->
+
+
+{% endblock content %}
+
+{% block footer_image %}
+	<img src="https://res.cloudinary.com/noiro/image/upload/v1705495943/Himex/pngegg_myhoxi.png" alt="Image" class="img-fluid">
+{% endblock footer_image %}
