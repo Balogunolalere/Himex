@@ -84,6 +84,11 @@ async def storage(request: Request):
 async def rail_transport(request: Request):
     return templates.TemplateResponse("railway.html", {"request": request})
 
+# Define a route for the path "/pipeline-transport" that returns the "pipeline-transport.html" template
+@app.get("/pipeline-transport")
+async def pipeline_transport(request: Request):
+    return templates.TemplateResponse("pipeline.html", {"request": request})
+
 # Define a middleware that fixes the MIME type for certain file extensions
 @app.middleware("http")
 async def fix_mime_type(request: Request, call_next):
