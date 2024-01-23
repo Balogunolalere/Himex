@@ -25,7 +25,10 @@ Himex | Contact Us
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
             /* Adjust the opacity as needed */
+
+         
         }
+
 </style>
 
 {% endblock styles %}
@@ -84,8 +87,15 @@ Himex | Contact Us
                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
                       </svg>
                     </div> <!-- /.icon -->
-                    <div class="service-contents">
-                      <p>info@himexlogistic.com</p>
+                    <div class="dropdown service-contents" style="width: 150px; border: 1px solid #ccc; border-radius: 5px; position: relative;">
+                      <div class="service-contents" onclick="toggleDrop()" style="padding: 10px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <p style="margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">info@himexlogisticbv.com</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <div id="dropdown" class="dropdown-menu" style="display: none; background-color: #f9f9f9; position: absolute; width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+                        <a class="dropdown-item" href="mailto:Rotterdam@himexlogisticbv.com" style="display: block; padding: 10px; border-top: 1px solid #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Rotterdam@himexlogisticbv.com</a>
+                        <a class="dropdown-item" href="mailto:Storage@himexlogisticbv.com" style="display: block; padding: 10px; border-top: 1px solid #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Storage@himexlogisticbv.com</a>
+                      </div>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -97,8 +107,15 @@ Himex | Contact Us
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                       </svg>
                     </div> <!-- /.icon -->
-                    <div class="service-contents">
-                      <p>+1 294 3925 3939</p>
+                    <div class="dropdown" style="width: 200px; border: 1px solid #ccc; border-radius: 5px; position: relative;">
+                      <div class="service-contents" onclick="toggleDropdown()" style="padding: 10px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <p style="margin: 0;">+31 97005030143</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <div id="dropdown-menu" class="dropdown-menu" style="display: none; background-color: #f9f9f9; position: absolute; width: 100%; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+                        <a class="dropdown-item" href="tel:+14092370094" style="display: block; padding: 10px; border-top: 1px solid #ccc;">+1 (409) 237 0094</a>
+                        <a class="dropdown-item" href="tel:+12815983506" style="display: block; padding: 10px; border-top: 1px solid #ccc;">+1 2815983506</a>
+                      </div>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -132,6 +149,33 @@ Himex | Contact Us
                 <button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
               </form>
 
+              <!-- Add this after the form -->
+              <div class="row mt-5">
+                <div class="col-lg-6">
+                  <div class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+                    <div class="service-icon color-1 mb-4">
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div class="service-contents">
+                      <h4>Sales Manager</h4>
+                      <p>Ioannou Andrew</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+                    <div class="service-icon color-1 mb-4">
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div class="service-contents">
+                      <h4>Director</h4>
+                      <p>Steve Davidson</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -142,7 +186,6 @@ Himex | Contact Us
 
 
     </div>
-  </div>
 
   <!-- End Contact Form -->
 
